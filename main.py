@@ -545,7 +545,7 @@ async def on_msg(u: Update, c: ContextTypes.DEFAULT_TYPE):
 
     elif mode == "manba":
         if not text.startswith("http"):
- await m.reply_text("Havola http bilan boshlanishi kerak")
+            await m.reply_text("Havola http bilan boshlanishi kerak")
             return
         d["sources"].append(text)
         save(d)
